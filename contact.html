@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="main.css" />
+    <title>Deepika Narne</title>
+</head>
+
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="main.html"><span class="fw-bolder text-primary">Deepika
+                            Narne</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="py-1 pt-5">
+            <div class="container px-5">
+                <div class="row align-items-center gx-5">
+                    <div class="col-lg-4 pb-5">
+                        <div class="bg-light rounded-4 py-5 px-4 px-md-5 mb-5">
+                            <div class="text-left mb-2">
+                                <h1 class="fw-bolder">Contact Info</h1>
+                            </div>
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="bi bi-telephone me-2 mb-1"></i> +1 (607)-595-7690</li>
+                                <li><i class="bi bi-envelope me-2 mb-3"></i> narnedeepika11@gmail.com</li>
+                                <li><i class="bi bi-linkedin me-2 mb-1"></i> <a
+                                        href="https://www.linkedin.com/in/deepikanarne/">LinkedIn</a></li>
+                                <li><i class="bi bi-github me-2 mb-3"></i> <a href="#!">GitHub</a></li>
+                                <li><i class="bi bi-geo-alt me-2 mb-3"></i> Binghamton, NY</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-8">
+                        <div class="bg-light rounded-4 py-5 px-4 px-md-5 mb-5">
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder">Let's Talk</h1>
+                                <p class="lead fw-normal text-muted mb-0">To work together!</p>
+                            </div>
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-10 col-xl-8">
+                                    <form id="recruiterForm">
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="text" id="name" name="name" style="width: 100%;" required>
+                                            <label for="name">Full Name:</label>
+                                        </div>
+                    
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="email" id="email" name="email" style="width: 100%;" required>
+                                            <label for="email">Email:</label>
+                                        </div>
+                    
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" type="text" id="company" name="company" style="width: 100%;" required>
+                                            <label for="company">Company:</label>
+                                        </div>
+                    
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" type="text" id="message" name="message" style="width: 100%;" required></textarea>
+                                            <label for="message">Message:</label>
+                                        </div>
+                                        <input type="hidden" name="body" value="Custom message: Hello, I'm interested in your portfolio.">
+
+                    
+                                        <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit" onclick="submitForm()">Submit</button></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-white py-4 mt-auto fixed-bottom d-none d-sm-block">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0 ">Copyright &copy; 2023</div>
+                    </div>
+                    <div class="col-auto d-flex flex-row">
+                        <span><i class="bi bi-telephone me-2"></i> +1 (607)-595-7690</span>
+                                <span><i class="bi bi-envelope me-2 mx-4"></i> narnedeepika11@gmail.com</span>
+                                <span><i class="bi bi-linkedin me-2 mx-4"></i> <a style="color:#6B76F7"
+                                        href="https://www.linkedin.com/in/deepikanarne/">LinkedIn</a></span>
+                                <span d-none d-m-block><i class="bi bi-geo-alt me-2 mx-4 "></i> Binghamton,NY</span>
+                                
+                    </div>
+                </div>
+            </div>
+          </footer>
+          <script>
+            function submitForm() {
+              var name = document.getElementById('name').value;
+              var email = document.getElementById('email').value;
+              var company = document.getElementById('company').value;
+              var message = document.getElementById('message').value;
+
+              var mailtoLink = 'mailto:narnedeepika11@gmail.com';
+              mailtoLink += '?subject=Contact from Portfolio';
+              mailtoLink += '&body=Hello, I\'m ' + encodeURIComponent(name) +
+                            ' from ' + encodeURIComponent(company)+ ' company.'+ '%0A%0AMessage: ' + encodeURIComponent(message) + '%0A%0AEmail: ' + encodeURIComponent(email)  ;
+            
+              // Open the mail client with the constructed link
+              window.location.href = mailtoLink;
+            }
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>

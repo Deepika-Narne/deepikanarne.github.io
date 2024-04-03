@@ -7597,6 +7597,9 @@ textarea.form-control-lg {
 .mt-0 {
   margin-top: 0 !important;
 }
+.ml-5 {
+  margin-left: 5rem !important;
+}
 
 .mt-1 {
   margin-top: 0.25rem !important;
@@ -10889,6 +10892,9 @@ textarea.form-control-lg {
   .text-xl-start {
     text-align: left !important;
   }
+  .text-m-start {
+    text-align: left !important;
+  }
   .text-xl-end {
     text-align: right !important;
   }
@@ -11597,7 +11603,7 @@ html {
   position: absolute;
   top:10%;
   bottom: 0;
-  left: 40%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
